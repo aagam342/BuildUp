@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Header from "./Components/Header";
+import Sidebar from "./Components/Sidebar";
+import Content from "./Components/Content";
+const App = () => {
+  const [selectedHeading, setSelectedHeading] = useState(0);
 
-function App() {
+  // Updated headings
+  const headings = [
+    "Dashboard",
+    "My Profile",
+    "Order Summary",
+    "E-bids and E-auction",
+    "Alerts and Reminders",
+    "Partner Feedback",
+    "Branch Details",
+    "Testimonial",
+    "Add new Company",
+    "Grievance Request",
+  ];
+
+  const handleHeadingClick = (index) => {
+    setSelectedHeading(index);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <div className="flex pt-16">
+        <Sidebar
+          headings={headings}
+          onHeadingClick={handleHeadingClick}
+          showSidebar={true}
+        />
+        <Content selectedHeading={selectedHeading} />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
