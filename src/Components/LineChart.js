@@ -3,7 +3,7 @@ import { Line } from "react-chartjs-2";
 
 function LineChart({ chartData }) {
   return (
-    <div className="w-[100%] ">
+    <div className=" ">
       <Line data={chartData} />
     </div>
   );

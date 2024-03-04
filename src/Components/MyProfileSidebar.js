@@ -14,8 +14,8 @@ const MyProfileSidebar = ({ selectedMainHeading, setSelectedMainHeading }) => {
   };
 
   return (
-    <div className="flex-shrink-0 w-64 h-full fixed">
-      <div className="bg-gray-800 text-white p-4">
+    <div className="flex-shrink-0 w-60 h-full fixed">
+      <div className="bg-custom-dark-blue text-white p-4">
         <select
           value={selectedMainHeading}
           onChange={handleMainHeadingChange}
