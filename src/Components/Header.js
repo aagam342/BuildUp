@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="bg-custom-blue text-white p-4 fixed w-full h-16 shadow-lg flex justify-between items-center">
+    <div className="bg-custom-blue text-white p-4 fixed w-full h-16 shadow-lg flex justify-between items-center z-50">
       <div className="flex items-center">
         <img
           src="https://w7.pngwing.com/pngs/604/618/png-transparent-larsen-toubro-limited-mmh-architectural-engineering-business-l-t-hydrocarbon-engineering-business-blue-text-trademark.png"

@@ -3,7 +3,7 @@ import { Line } from "react-chartjs-2";
 
 function LineChart({ chartData }) {
   return (
-    <div className=" ">
+    <div className="hover:scale-105 ">
       <Line data={chartData} />
     </div>
   );

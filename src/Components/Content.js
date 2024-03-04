@@ -45,7 +45,7 @@ const Content = ({ selectedHeading }) => {
   return (
     <div
       className="ml-72 flex flex-col min-h-screen bg-slate-100 "
-      style={{ width: "calc(100vw - 72px)" }}
+      style={{ width: "calc(100vw - 80px)" }}
     >
       <div
         className={` overscroll-y-auto flex-grow p-4 transition-all duration-300 ml-${
