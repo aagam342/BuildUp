@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 
-const MyProfileSidebar = ({ selectedMainHeading, setSelectedMainHeading }) => {
+const MyProfileSidebar = ({
+  selectedMainHeading,
+  setSelectedMainHeading,
+  selectedSubHeading,
+  handleSelectedSubHeading,
+}) => {
   const [expandedPanel, setExpandedPanel] = useState(null);
 
   const mainHeadings = ["Customer", "Service Provider", "Supplier"];
@@ -32,16 +37,42 @@ const MyProfileSidebar = ({ selectedMainHeading, setSelectedMainHeading }) => {
         <div className="border-none">
           <div
             className="cursor-pointer hover:text-blue-500 p-2 font-semibold"
+            onClick={() => handleSelectedSubHeading("Modifications")}
+          >
+            Modifications
+          </div>
+          <div
+            className="cursor-pointer hover:text-blue-500 p-2 font-semibold"
             onClick={() => toggleAccordion("panel1")}
           >
             General
           </div>
           {expandedPanel === "panel1" && (
-            <div className="pl-4 p-2">
-              <div className="p-1">Organisation Details</div>
-              <div className="p-1">Bank Details</div>
-              <div className="p-1">Credentials</div>
-              <div className="p-1">Partnership Avenues</div>
+            <div className="pl-4 p-2 cursor-pointer">
+              <div
+                className="p-1"
+                onClick={() => handleSelectedSubHeading("Organisation Details")}
+              >
+                Organisation Details
+              </div>
+              <div
+                className="p-1"
+                onClick={() => handleSelectedSubHeading("Bank Details")}
+              >
+                Bank Details
+              </div>
+              <div
+                className="p-1"
+                onClick={() => handleSelectedSubHeading("Credentials")}
+              >
+                Credentials
+              </div>
+              <div
+                className="p-1"
+                onClick={() => handleSelectedSubHeading("Partnership Avenues")}
+              >
+                Partnership Avenues
+              </div>
             </div>
           )}
         </div>
@@ -53,9 +84,21 @@ const MyProfileSidebar = ({ selectedMainHeading, setSelectedMainHeading }) => {
             Financial
           </div>
           {expandedPanel === "panel2" && (
-            <div className="pl-4 p-2">
-              <div className="p-1">Financial Performance</div>
-              <div className="p-1">Others</div>
+            <div className="pl-4 p-2 cursor-pointer">
+              <div
+                className="p-1"
+                onClick={() =>
+                  handleSelectedSubHeading("Financial Performance")
+                }
+              >
+                Financial Performance
+              </div>
+              <div
+                className="p-1"
+                onClick={() => handleSelectedSubHeading("Others")}
+              >
+                Others
+              </div>
             </div>
           )}
         </div>
@@ -67,8 +110,13 @@ const MyProfileSidebar = ({ selectedMainHeading, setSelectedMainHeading }) => {
             Innovation
           </div>
           {expandedPanel === "panel3" && (
-            <div className="pl-4 p-2">
-              <div className="p-1">Innovative</div>
+            <div className="pl-4 p-2 cursor-pointer">
+              <div
+                className="p-1"
+                onClick={() => handleSelectedSubHeading("Innovative")}
+              >
+                Innovative
+              </div>
             </div>
           )}
         </div>
@@ -80,9 +128,21 @@ const MyProfileSidebar = ({ selectedMainHeading, setSelectedMainHeading }) => {
             HSE
           </div>
           {expandedPanel === "panel4" && (
-            <div className="pl-4 p-2">
-              <div className="p-1">Awards and Certifications</div>
-              <div className="p-1">Best Practices</div>
+            <div className="pl-4 p-2 cursor-pointer">
+              <div
+                className="p-1"
+                onClick={() =>
+                  handleSelectedSubHeading("Awards and Certifications")
+                }
+              >
+                Awards and Certifications
+              </div>
+              <div
+                className="p-1"
+                onClick={() => handleSelectedSubHeading("Best Practices")}
+              >
+                Best Practices
+              </div>
             </div>
           )}
         </div>
@@ -94,9 +154,19 @@ const MyProfileSidebar = ({ selectedMainHeading, setSelectedMainHeading }) => {
             Manpower
           </div>
           {expandedPanel === "panel5" && (
-            <div className="pl-4 p-2">
-              <div className="p-1">Workforce Details</div>
-              <div className="p-1">Statutory Compliance</div>
+            <div className="pl-4 p-2 cursor-pointer">
+              <div
+                className="p-1"
+                onClick={() => handleSelectedSubHeading("Workforce Details")}
+              >
+                Workforce Details
+              </div>
+              <div
+                className="p-1"
+                onClick={() => handleSelectedSubHeading("Statutory Compliance")}
+              >
+                Statutory Compliance
+              </div>
             </div>
           )}
         </div>
@@ -108,8 +178,13 @@ const MyProfileSidebar = ({ selectedMainHeading, setSelectedMainHeading }) => {
             Sustainability
           </div>
           {expandedPanel === "panel6" && (
-            <div className="pl-4 p-2">
-              <div className="p-1">Sustainability</div>
+            <div className="pl-4 p-2 cursor-pointer">
+              <div
+                className="p-1"
+                onClick={() => handleSelectedSubHeading("Sustainability")}
+              >
+                Sustainability
+              </div>
             </div>
           )}
         </div>
@@ -121,9 +196,21 @@ const MyProfileSidebar = ({ selectedMainHeading, setSelectedMainHeading }) => {
             Attachments
           </div>
           {expandedPanel === "panel7" && (
-            <div className="pl-4 p-2">
-              <div className="p-1">General</div>
-              <div className="p-1">Financial</div>
+            <div className="pl-4 p-2 cursor-pointer">
+              <div
+                className="p-1"
+                onClick={() => handleSelectedSubHeading("General Attachments")}
+              >
+                General
+              </div>
+              <div
+                className="p-1"
+                onClick={() =>
+                  handleSelectedSubHeading("Financial Attachments")
+                }
+              >
+                Financial
+              </div>
             </div>
           )}
         </div>
