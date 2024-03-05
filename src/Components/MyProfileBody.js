@@ -40,7 +40,7 @@ const MyProfileBody = ({ selectedSubHeading }) => {
         return <BestPractices />;
       case "Workforce Details":
         return <WorkforceDetails />;
-      case "Statutory Compliance ":
+      case "Statutory Compliance":
         return <StatutoryCompliance />;
       case "Sustainability":
         return <Sustainability />;
@@ -57,10 +57,10 @@ const MyProfileBody = ({ selectedSubHeading }) => {
 
   return (
     <div
-      className="ml-72 flex flex-col min-h-screen bg-slate-100 "
-      style={{ width: "calc(100vw - 80px)" }}
+      className="ml-60 flex min-h-screen  bg-slate-200 rounded-lg "
+      style={{ width: "60vw" }}
     >
-      <div className=" overscroll-y-auto flex-grow p-4 transition-all duration-300 ">
+      <div className="overscroll-y-auto flex-grow p-4 transition-all duration-300 ">
         {renderComponent(selectedSubHeading)}
       </div>
     </div>

@@ -8,8 +8,8 @@ const Sidebar = ({ headings, onHeadingClick, showSidebar }) => {
   };
   return (
     <div
-      className={`transition-all duration-300 overflow-hidden fixed bg-custom-dark-blue ${
-        showSidebar ? "w-72 h-full" : "w-0"
+      className={`transition-all duration-300  fixed bg-custom-dark-blue ${
+        showSidebar ? "w-60 h-full" : "w-0"
       }`}
       style={{ fontFamily: "'Nunito', sans-serif" }}
     >
@@ -20,7 +20,7 @@ const Sidebar = ({ headings, onHeadingClick, showSidebar }) => {
         <ul className="flex flex-col h-full  ">
           <li
             key={0}
-            className={`flex items-center cursor-pointer px-8 py-2 mb-2  font-bold rounded-md hover:scale-105 ${
+            className={`flex items-center cursor-pointer px-2 py-2 mb-2  font-bold rounded-md hover:scale-105 ${
               selectedHeading === 0
                 ? "bg-custom-blue text-white"
                 : "hover:bg-gray-700 hover:text-white"
@@ -38,7 +38,7 @@ const Sidebar = ({ headings, onHeadingClick, showSidebar }) => {
           </li>
           <li
             key={1}
-            className={`flex items-center cursor-pointer px-8 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
+            className={`flex items-center cursor-pointer px-2 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
               selectedHeading === 1
                 ? "bg-custom-blue text-white"
                 : "hover:bg-gray-700 hover:text-white"
@@ -56,7 +56,7 @@ const Sidebar = ({ headings, onHeadingClick, showSidebar }) => {
           </li>
           <li
             key={2}
-            className={`flex items-center cursor-pointer px-8 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
+            className={`flex items-center cursor-pointer px-2 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
               selectedHeading === 2
                 ? "bg-custom-blue text-white"
                 : "hover:bg-gray-700 hover:text-white"
@@ -74,7 +74,7 @@ const Sidebar = ({ headings, onHeadingClick, showSidebar }) => {
           </li>
           <li
             key={3}
-            className={`flex items-center cursor-pointer px-8 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
+            className={`flex items-center cursor-pointer px-2 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
               selectedHeading === 3
                 ? "bg-custom-blue text-white"
                 : "hover:bg-gray-700 hover:text-white"
@@ -92,7 +92,7 @@ const Sidebar = ({ headings, onHeadingClick, showSidebar }) => {
           </li>
           <li
             key={4}
-            className={`flex items-center cursor-pointer px-8 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
+            className={`flex items-center cursor-pointer px-2 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
               selectedHeading === 4
                 ? "bg-custom-blue text-white"
                 : "hover:bg-gray-700 hover:text-white"
@@ -110,7 +110,7 @@ const Sidebar = ({ headings, onHeadingClick, showSidebar }) => {
           </li>
           <li
             key={5}
-            className={`flex items-center cursor-pointer px-8 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
+            className={`flex items-center cursor-pointer px-2 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
               selectedHeading === 5
                 ? "bg-custom-blue text-white"
                 : "hover:bg-gray-700 hover:text-white"
@@ -128,7 +128,7 @@ const Sidebar = ({ headings, onHeadingClick, showSidebar }) => {
           </li>
           <li
             key={6}
-            className={`flex items-center cursor-pointer px-8 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
+            className={`flex items-center cursor-pointer px-2 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
               selectedHeading === 6
                 ? "bg-custom-blue text-white"
                 : "hover:bg-gray-700 hover:text-white"
@@ -146,7 +146,7 @@ const Sidebar = ({ headings, onHeadingClick, showSidebar }) => {
           </li>
           <li
             key={7}
-            className={`flex items-center cursor-pointer px-8 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
+            className={`flex items-center cursor-pointer px-2 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
               selectedHeading === 7
                 ? "bg-custom-blue text-white"
                 : "hover:bg-gray-700 hover:text-white"
@@ -165,7 +165,7 @@ const Sidebar = ({ headings, onHeadingClick, showSidebar }) => {
           </li>
           <li
             key={8}
-            className={`flex items-center cursor-pointer px-8 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
+            className={`flex items-center cursor-pointer px-2 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
               selectedHeading === 8
                 ? "bg-custom-blue text-white"
                 : "hover:bg-gray-700 hover:text-white"
@@ -183,7 +183,7 @@ const Sidebar = ({ headings, onHeadingClick, showSidebar }) => {
           </li>
           <li
             key={9}
-            className={`flex items-center cursor-pointer px-8 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
+            className={`flex items-center cursor-pointer px-2 py-2 mb-2 font-bold rounded-md hover:scale-105 ${
               selectedHeading === 9
                 ? "bg-custom-blue text-white"
                 : "hover:bg-gray-700 hover:text-white"

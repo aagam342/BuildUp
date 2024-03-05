@@ -44,14 +44,10 @@ const Content = ({ selectedHeading }) => {
 
   return (
     <div
-      className="ml-72 flex flex-col min-h-screen bg-slate-100 "
+      className="ml-60 flex flex-col min-h-screen bg-slate-100 overflow-x-hidden"
       style={{ width: "calc(100vw - 80px)" }}
     >
-      <div
-        className={` overscroll-y-auto flex-grow p-4 transition-all duration-300 ml-${
-          showSidebar ? "w-72" : "w-0"
-        }`}
-      >
+      <div className="overscroll-y-auto  flex-grow p-4 transition-all duration-300 ">
         {renderComponent(selectedHeading)}
       </div>
     </div>

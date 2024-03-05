@@ -19,12 +19,12 @@ const MyProfileSidebar = ({
   };
 
   return (
-    <div className="flex-shrink-0 w-60 h-full fixed">
-      <div className="bg-custom-dark-blue text-white p-4">
+    <div className="bg-slate-200 flex-shrink-0 w-56 h-full fixed rounded-lg">
+      <div className=" text-white p-4 rounded-t-lg">
         <select
           value={selectedMainHeading}
           onChange={handleMainHeadingChange}
-          className="w-full p-2 rounded-md bg-gray-700 text-white"
+          className="w-full p-2 rounded-md bg-gray-700 text-white bg-custom-dark-blue"
         >
           {mainHeadings.map((heading, index) => (
             <option key={index} value={heading}>
@@ -33,7 +33,7 @@ const MyProfileSidebar = ({
           ))}
         </select>
       </div>
-      <div className="bg-gray-200 p-4 h-full overflow-y-auto">
+      <div className=" px-4  h-full overflow-y-auto">
         <div className="border-none">
           <div
             className="cursor-pointer hover:text-blue-500 p-2 font-semibold"
@@ -50,25 +50,25 @@ const MyProfileSidebar = ({
           {expandedPanel === "panel1" && (
             <div className="pl-4 p-2 cursor-pointer">
               <div
-                className="p-1"
+                className="p-1 hover:text-blue-500"
                 onClick={() => handleSelectedSubHeading("Organisation Details")}
               >
                 Organisation Details
               </div>
               <div
-                className="p-1"
+                className="p-1 hover:text-blue-500"
                 onClick={() => handleSelectedSubHeading("Bank Details")}
               >
                 Bank Details
               </div>
               <div
-                className="p-1"
+                className="p-1 hover:text-blue-500"
                 onClick={() => handleSelectedSubHeading("Credentials")}
               >
                 Credentials
               </div>
               <div
-                className="p-1"
+                className="p-1 hover:text-blue-500"
                 onClick={() => handleSelectedSubHeading("Partnership Avenues")}
               >
                 Partnership Avenues
@@ -86,7 +86,7 @@ const MyProfileSidebar = ({
           {expandedPanel === "panel2" && (
             <div className="pl-4 p-2 cursor-pointer">
               <div
-                className="p-1"
+                className="p-1 hover:text-blue-500"
                 onClick={() =>
                   handleSelectedSubHeading("Financial Performance")
                 }
@@ -94,7 +94,7 @@ const MyProfileSidebar = ({
                 Financial Performance
               </div>
               <div
-                className="p-1"
+                className="p-1 hover:text-blue-500"
                 onClick={() => handleSelectedSubHeading("Others")}
               >
                 Others
@@ -112,7 +112,7 @@ const MyProfileSidebar = ({
           {expandedPanel === "panel3" && (
             <div className="pl-4 p-2 cursor-pointer">
               <div
-                className="p-1"
+                className="p-1 hover:text-blue-500"
                 onClick={() => handleSelectedSubHeading("Innovative")}
               >
                 Innovative
@@ -130,7 +130,7 @@ const MyProfileSidebar = ({
           {expandedPanel === "panel4" && (
             <div className="pl-4 p-2 cursor-pointer">
               <div
-                className="p-1"
+                className="p-1 hover:text-blue-500"
                 onClick={() =>
                   handleSelectedSubHeading("Awards and Certifications")
                 }
@@ -138,7 +138,7 @@ const MyProfileSidebar = ({
                 Awards and Certifications
               </div>
               <div
-                className="p-1"
+                className="p-1 hover:text-blue-500"
                 onClick={() => handleSelectedSubHeading("Best Practices")}
               >
                 Best Practices
@@ -156,13 +156,13 @@ const MyProfileSidebar = ({
           {expandedPanel === "panel5" && (
             <div className="pl-4 p-2 cursor-pointer">
               <div
-                className="p-1"
+                className="p-1 hover:text-blue-500"
                 onClick={() => handleSelectedSubHeading("Workforce Details")}
               >
                 Workforce Details
               </div>
               <div
-                className="p-1"
+                className="p-1 hover:text-blue-500"
                 onClick={() => handleSelectedSubHeading("Statutory Compliance")}
               >
                 Statutory Compliance
@@ -180,7 +180,7 @@ const MyProfileSidebar = ({
           {expandedPanel === "panel6" && (
             <div className="pl-4 p-2 cursor-pointer">
               <div
-                className="p-1"
+                className="p-1 hover:text-blue-500"
                 onClick={() => handleSelectedSubHeading("Sustainability")}
               >
                 Sustainability
@@ -198,13 +198,13 @@ const MyProfileSidebar = ({
           {expandedPanel === "panel7" && (
             <div className="pl-4 p-2 cursor-pointer">
               <div
-                className="p-1"
+                className="p-1 hover:text-blue-500"
                 onClick={() => handleSelectedSubHeading("General Attachments")}
               >
                 General
               </div>
               <div
-                className="p-1"
+                className="p-1 hover:text-blue-500"
                 onClick={() =>
                   handleSelectedSubHeading("Financial Attachments")
                 }

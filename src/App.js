@@ -24,7 +24,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div style={{ fontFamily: "'Nunito', sans-serif" }}>
       <Header />
       <div className="flex pt-16">
         <Sidebar
